@@ -2,11 +2,11 @@ class Rect{
   color c1,c2;
   float x, y;
   float wid, hgt;
-  String data;
+  int data;
   boolean show_data;
   String name;
   
-  public Rect(String data, String name){
+  public Rect(int data, String name){
     this.data = data;
     this.name = name;
     this.c1 = color(220,220,220);

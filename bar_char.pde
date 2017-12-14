@@ -3,14 +3,13 @@ class Bar_char{
   float gap;
   String[] names;
   int[] values;
-  //ArrayList<Rect> rects = new ArrayList<Rect>();
   Rect[] rects;
   Bar_char(String[] names, int[] values){
     this.names = names;
      rects = new Rect[names.length];
     this.values = values;
     for(int i=0; i<names.length; i++){
-      rects[i]= new Rect(Integer.toString(values[i]),names[i]);
+      rects[i]= new Rect(values[i],names[i]);
       //rects.add(r);
     }
   }
