@@ -1,5 +1,4 @@
 import java.util.Map;
-import java.util.Random;
 
 class Diagram{
   
@@ -12,7 +11,6 @@ class Diagram{
   int max_mass = 0;
   int total_mass = 0;
   int total_bubble = 1;
-  Random r = new Random();
   Node chosen, match1, match2;
   float total_E;
   int ids = 0;
@@ -47,10 +45,11 @@ class Diagram{
     }
     
     // initialized the diameter of each node
-    float x_r, y_r;
+    float x_r = 0.1*width;
+    float y_r = 0.9*height;
     for(Node b:bubbles){
-      x_r = r.nextFloat()*width;
-      y_r = r.nextFloat()*height;
+      x_r = x_r+0.1*width;
+      y_r = y_r-0.1*height;
       b.setDia(0.05*height*0.01*height*float(b.mass)/float(max_mass));
       b.set(x_r, y_r);
       println(b.x,"  ", b.y, "neighbor: ", b.id);
