@@ -22,10 +22,6 @@ void setup(){
       Y_range = values[i-1];
     }
   }
-  printArray(headers);
-  printArray(names);
-  printArray(values);
-  print(Y_range);
   barc = new Bar_char(names, values);
 }
 
