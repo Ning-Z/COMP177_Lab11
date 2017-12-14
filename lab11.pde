@@ -36,7 +36,7 @@ void draw(){
   while(temp >= 0.1*height){
     line(x_frame, temp, width-x_frame+20, temp);
     fill(0);
-    text(Integer.toString(y_mark*10), x_frame-0.045*width, temp);
+    text(str(y_mark*10), x_frame-0.045*width, temp);
     y_mark ++;
     temp -= y_gap;
   }  
