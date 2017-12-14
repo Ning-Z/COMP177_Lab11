@@ -10,7 +10,6 @@ Bar_char barc;
 
 void setup(){
   size(800,600);
-  surface.setResizable(true);
   lines = loadStrings("./data.csv");
   headers = split(lines[0], ",");
   names = new String[lines.length - 1];
